@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
 
@@ -54,11 +54,11 @@ const Hero = () => {
               <ArrowDown className="ml-2 w-5 h-5" />
             </Button>
             
-            <div className="flex gap-4">
+            <div className="flex gap-4 animate-pulse">
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm hover-scale animate-glow"
                 asChild
               >
                 <a href="https://www.linkedin.com/in/sumeet-singh-668516273" target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm hover-scale animate-glow"
                 asChild
               >
                 <a href="https://shorturl.at/wo4yJ" target="_blank" rel="noopener noreferrer">
@@ -80,7 +80,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm hover-scale animate-glow"
                 asChild
               >
                 <a href="mailto:sumeetwebdeveloper.26@gmail.com">
@@ -91,7 +91,7 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="sm"
-                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 backdrop-blur-sm hover-scale animate-glow"
                 asChild
               >
                 <a href="tel:9167471055">

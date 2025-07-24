@@ -49,7 +49,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+            <h1 className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent animate-glow hover-scale">
               Sumeet Singh
             </h1>
           </div>
@@ -63,10 +63,10 @@ const Navigation = () => {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
+                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-2 hover-scale ${
                       activeSection === item.id
-                        ? 'bg-gradient-hero text-primary-foreground shadow-glow'
-                        : 'text-foreground hover:bg-muted hover:scale-105'
+                        ? 'bg-gradient-hero text-primary-foreground shadow-glow animate-glow'
+                        : 'text-foreground hover:bg-muted'
                     }`}
                   >
                     <Icon size={16} />

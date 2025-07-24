@@ -74,25 +74,30 @@ const Skills = () => {
             return (
               <Card 
                 key={category.category} 
-                className="portfolio-card animate-scale-in"
+                className="portfolio-card animate-scale-in hover-scale"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Icon className="w-6 h-6 text-primary" />
+                  <CardTitle className="flex items-center gap-3 animate-fade-in">
+                    <Icon className="w-6 h-6 text-primary animate-pulse" />
                     {category.category}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {category.skills.map((skill) => (
-                    <div key={skill.name} className="space-y-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skill.name} 
+                      className="space-y-2 animate-slide-in-left hover-scale"
+                      style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}
+                    >
                       <div className="flex justify-between items-center">
                         <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                        <span className="text-xs text-muted-foreground animate-fade-in">{skill.level}%</span>
                       </div>
                       <Progress 
                         value={skill.level} 
-                        className="h-2"
+                        className="h-2 animate-scale-in"
+                        style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05) + 0.2}s` }}
                       />
                     </div>
                   ))}

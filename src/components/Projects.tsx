@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, Calendar, Users } from 'lucide-react';
+import { ExternalLink, Calendar, Users } from 'lucide-react';
 
 const Projects = () => {
   const projects = [

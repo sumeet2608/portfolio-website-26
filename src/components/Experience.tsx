@@ -8,10 +8,10 @@ const Experience = () => {
     {
       position: 'Application Developer Intern',
       company: 'Alobha Technologies Pvt Ltd',
-      period: 'Feb 2025 – Jun 2025',
+      period: 'Feb 2025 – Jun 2025 (4 months)',
       location: 'India',
       type: 'Internship',
-      description: 'Built comprehensive employee management system with modern web technologies.',
+      description: 'Built comprehensive employee management system with modern web technologies during 4-month internship.',
       responsibilities: [
         'Developed Employee Management System using Angular 16 and Angular Material',
         'Implemented CRUD functionality with MongoDB Compass integration',
@@ -22,7 +22,7 @@ const Experience = () => {
       ],
       technologies: ['Angular 16', 'Angular Material', 'MongoDB', 'TypeScript', 'Node.js'],
       achievements: [
-        'Successfully completed full-stack project within timeline',
+        'Successfully completed full-stack project within 4-month timeline',
         'Implemented advanced features like undo/redo and session persistence',
         'Gained hands-on experience with enterprise-level development practices'
       ]
@@ -30,10 +30,10 @@ const Experience = () => {
     {
       position: 'Application Developer Intern',
       company: 'Go Digital Technology Consulting LLP',
-      period: 'Dec 2024 – Jan 2025',
+      period: 'Dec 2024 – Jan 2025 (1 month)',
       location: 'India',
       type: 'Internship',
-      description: 'Focused on frontend development with Angular, building responsive user interfaces.',
+      description: 'Focused on frontend development with Angular during 1-month intensive internship.',
       responsibilities: [
         'Built responsive UIs with Angular framework',
         'Implemented Angular components with proper data binding',
@@ -43,7 +43,7 @@ const Experience = () => {
       ],
       technologies: ['Angular', 'TypeScript', 'HTML5', 'CSS3', 'JavaScript'],
       achievements: [
-        'Mastered Angular component architecture',
+        'Mastered Angular component architecture in 1 month',
         'Improved skills in responsive web design',
         'Learned industry-standard development practices'
       ]
@@ -146,9 +146,9 @@ const Experience = () => {
             <div className="timeline-dot animate-glow"></div>
             <Card className="portfolio-card ml-6">
               <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-primary mb-2">Ready for New Opportunities!</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">5 Months of Hands-On Experience!</h3>
                 <p className="text-muted-foreground">
-                  Looking forward to contributing to innovative projects and growing as a Full-Stack Developer.
+                  With 5 months of internship experience, I'm ready to contribute to innovative projects and grow as a Full-Stack Developer.
                 </p>
               </CardContent>
             </Card>

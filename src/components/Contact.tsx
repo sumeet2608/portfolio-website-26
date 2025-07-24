@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, Send, Linkedin, ExternalLink, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, ExternalLink } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,12 +73,6 @@ const Contact = () => {
       link: 'https://shorturl.at/wo4yJ',
       color: 'text-primary'
     },
-    {
-      icon: Github,
-      label: 'GitHub',
-      link: '#',
-      color: 'text-gray-700'
-    }
   ];
 
   return (
@@ -89,23 +83,27 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-in-left">
-            <Card className="portfolio-card">
+            <Card className="portfolio-card hover-scale">
               <CardHeader>
-                <CardTitle className="text-2xl">Let's Connect!</CardTitle>
+                <CardTitle className="text-2xl animate-fade-in">Let's Connect!</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed animate-fade-in">
                   I'm always excited to discuss new opportunities, collaborate on projects, 
                   or simply have a conversation about technology and development. 
                   Feel free to reach out!
                 </p>
                 
                 <div className="space-y-4">
-                  {contactInfo.map((info) => {
+                  {contactInfo.map((info, index) => {
                     const Icon = info.icon;
                     return (
-                      <div key={info.label} className="flex items-center gap-4">
-                        <div className="p-3 bg-gradient-hero rounded-lg">
+                      <div 
+                        key={info.label} 
+                        className="flex items-center gap-4 hover-scale animate-slide-in-left"
+                        style={{ animationDelay: `${index * 0.1}s` }}
+                      >
+                        <div className="p-3 bg-gradient-hero rounded-lg animate-glow">
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                         <div>
@@ -113,7 +111,7 @@ const Contact = () => {
                           {info.link ? (
                             <a 
                               href={info.link}
-                              className="text-primary hover:text-primary/80 transition-colors"
+                              className="text-primary hover:text-primary/80 transition-colors story-link"
                             >
                               {info.value}
                             </a>
@@ -126,17 +124,18 @@ const Contact = () => {
                   })}
                 </div>
                 
-                <div className="pt-6 border-t border-border">
+                <div className="pt-6 border-t border-border animate-fade-in">
                   <h4 className="font-semibold mb-4">Follow Me</h4>
                   <div className="flex gap-4">
-                    {socialLinks.map((social) => {
+                    {socialLinks.map((social, index) => {
                       const Icon = social.icon;
                       return (
                         <Button
                           key={social.label}
                           variant="outline"
                           size="sm"
-                          className="hover:scale-110 transition-all duration-300"
+                          className="hover:scale-110 transition-all duration-300 animate-scale-in"
+                          style={{ animationDelay: `${index * 0.1}s` }}
                           asChild
                         >
                           <a href={social.link} target="_blank" rel="noopener noreferrer">
